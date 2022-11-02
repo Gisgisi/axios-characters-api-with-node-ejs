@@ -1,0 +1,7 @@
+<h1>Update User</h1>
+<form method="POST" action="/characters/<%= character.id %>/update">
+    <label>name<input name="name" type="text" value="<%= character.name %> "></label>
+    <label>occupation<input name="occupation" type="text" value="<%= character.occupation %>"></label>
+    <label>weapon<input name="weapon" type="text" value="<%= character.weapon %>"></label>
+    <button>submit</button>
+</form>

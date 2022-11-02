@@ -3,3 +3,11 @@
 <h3>Occupation: <%= character.occupation %></h3>
 
 <p>Weapon: <%= character.weapon %></p>
+<a href="/characters/<%= character.id %>/update">edit</a>
+
+<form method="POST" action="/characters/<%= character.id %>/delete">
+    <label>name<input name="name" type="text" value="<%= character.name %> "></label>
+    <label>occupation<input name="occupation" type="text" value="<%= character.occupation %>"></label>
+    <label>weapon<input name="weapon" type="text" value="<%= character.weapon %>"></label>
+    <button>delete</button>
+</form>
